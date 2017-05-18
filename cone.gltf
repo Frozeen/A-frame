@@ -1,0 +1,151 @@
+{
+    "accessors": {
+        "accessor_buffer_Cone_0": {
+            "bufferView": "bufferView_buffer_Cone_0",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 128,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        "accessor_buffer_Cone_1": {
+            "bufferView": "bufferView_buffer_Cone_0",
+            "byteOffset": 1536,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 128,
+            "max": [
+                0.89097660779953,
+                0.8909766674041748,
+                0.44548845291137695
+            ],
+            "min": [
+                -0.8909767866134644,
+                -0.8909766674041748,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        "accessor_buffer_Cone_2": {
+            "bufferView": "bufferView_buffer_Cone_1",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 186,
+            "max": [
+                127
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        }
+    },
+    "asset": {
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.3"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferView_buffer_Cone_0": {
+            "buffer": "buffer_combined",
+            "byteLength": 3072,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        "bufferView_buffer_Cone_1": {
+            "buffer": "buffer_combined",
+            "byteLength": 372,
+            "byteOffset": 3072,
+            "target": 34963
+        }
+    },
+    "buffers": {
+        "buffer_combined": {
+            "byteLength": 3444,
+            "type": "arraybuffer",
+            "uri": "buffer_combined.bin"
+        }
+    },
+    "extensions": {
+        "KHR_materials_common": {
+            "lights": {}
+        }
+    },
+    "extensionsUsed": [
+        "KHR_materials_common"
+    ],
+    "meshes": {
+        "mesh_Cone": {
+            "name": "Cone",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_buffer_Cone_1",
+                        "POSITION": "accessor_buffer_Cone_0"
+                    },
+                    "indices": "accessor_buffer_Cone_2",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "node_Cone": {
+            "children": [],
+            "meshes": [
+                "mesh_Cone"
+            ],
+            "name": "Cone",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                0.1148952916264534,
+                -0.9999854564666748,
+                -0.22841228544712067
+            ]
+        }
+    },
+    "samplers": {
+        "sampler_default": {}
+    },
+    "scene": "scene_Scene",
+    "scenes": {
+        "scene_Scene": {
+            "extras": {
+                "active_camera": "camera_Camera",
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                "node_Cone"
+            ]
+        }
+    }
+}
